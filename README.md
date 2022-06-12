@@ -50,6 +50,6 @@
  * 网易API  
  
  https://binaryify.github.io/NeteaseCloudMusicApi/#/  
- ## 有帮助请点个star,Thanks!  
+ ## 有帮助请点个Star,Thanks!  
  ## 有兴趣者欢迎贡献
  
