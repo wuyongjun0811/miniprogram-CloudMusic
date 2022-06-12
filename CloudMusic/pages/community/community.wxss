@@ -1,0 +1,96 @@
+/* pages/community/community.wxss */
+.video-container .header{
+  margin: 20rpx;
+}
+.video-container .header .search{
+  border: 1rpx solid #eee;
+  border-radius: 30rpx ;
+  background: #EEEEEE;
+  height: 80rpx;
+  text-align: center;
+}
+.search-input{
+  height: 80rpx;
+}
+
+/* 导航 */
+.nav{
+  display: flex;
+  height: 60rpx;
+}
+.nav .navItem{
+  flex: 1;
+  text-align: center;
+}
+.navItem .active{
+  color: red;
+}
+
+/* 视频列表 */
+/* 1vh=1%的视口高度 */
+/* -号两边要加空格 */
+.videoScroll{
+  height: calc(100vh - 147.2rpx);
+}
+.videoItem .common{
+  width: 100%;
+}
+
+.videoItem .content{
+  line-height: 60rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 视频头部 */
+.video-header {
+  border-top: 2rpx solid #ddd;
+  padding: 20rpx 0;
+}
+/* footer */
+/* .footer {
+  border-top: 1rpx solid #eee;
+  padding: 20rpx 0;
+} */
+.videoItem .avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+  .videoItem .nickName {
+  font-size: 32rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+
+.footer .comments_praised {
+  float: right;
+}
+
+.comments_praised .btn {
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.comments_praised .btn:after {
+  border: none;
+}
+
+.comments_praised .item {
+  margin-left: 50rpx;
+  position: relative;
+}
+
+.comments_praised .item .count {
+  position: absolute;
+  top: -20rpx;
+  font-size: 20rpx;
+}
+
+
+
+

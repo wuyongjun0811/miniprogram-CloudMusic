@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/personal/personal",
+    "pages/community/community",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTitleText": "云音乐",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#d43c33",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "/images/tabs/find.png",
+        "selectedIconPath": "/images/tabs/find_active.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "/images/tabs/my.png",
+        "selectedIconPath": "/images/tabs/my_active.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "云村",
+        "iconPath": "/images/tabs/community.png",
+        "selectedIconPath": "/images/tabs/community_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": ["audio"],
+  "subPackages": [
+    {
+      "root": "songPackage",
+      "pages": [
+        "pages/playSong/playSong",
+        "pages/recommendDaily/recommend"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": ["songPackage"]
+    }
+  }
+}

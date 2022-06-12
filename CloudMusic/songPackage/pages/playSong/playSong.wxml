@@ -1,0 +1,33 @@
+<!--pages/playSong/playSong.wxml-->
+<view class="playSongContainer">
+  <view class="songName">{{song.name}}</view>
+  <view class="singerName">{{song.ar[0].name}}</view>
+  <view class="circle"></view>
+  <!-- 双括号中动态的class要加引号 -->
+  <image class="needle {{isPlay?'needlePlay':''}}" src="/images/playSong/needle.png"></image>
+<!-- 磁盘 -->
+  <view class="discContainer {{isPlay?'discAnimation':'discAnimationPaused'}}">
+    <image class="disc" src="/images/playSong/disc.png"></image>
+    <image class="discCover" src="{{song.al.picUrl}}"></image>
+  </view>
+  <!-- 进度条 -->
+  <view class="progressBar">
+    <text>{{currentTime}}</text>
+    <view class="bar">
+      <view class="dynamicBar" style="width: {{barWidth + 'rpx'}};">
+        <!-- <view class="circle">
+        </view> -->
+      </view>
+    </view>
+    <text>{{totalTime}}</text>
+  </view>
+  <!-- 底部控制播放区域 -->
+  <view class="playControl">
+    <text class="iconfont icon-xunhuanbofang">顺序播放</text>
+    <text class="iconfont icon-shangyishoushangyige" bindtap="switchMusic" id="pre">上一首</text>
+    <text class="iconfont {{isPlay?'icon-24gl':'icon-zanting'}} big" bindtap="musicPlay">{{isPlay?'暂停':'播放'}}</text>
+    <text class="iconfont icon-xiayigexiayishou" bindtap="switchMusic" id="next">下一首</text>
+    <text class="iconfont icon-24gl-playlist">播放列表</text>
+  </view>
+
+</view>

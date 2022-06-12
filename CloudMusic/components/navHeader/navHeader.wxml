@@ -1,0 +1,5 @@
+<!--components/navHeader/navHeader.wxml-->
+<view class="header">
+    <text class="title">{{title}}</text>
+    <text class="more">更多</text>
+  </view>

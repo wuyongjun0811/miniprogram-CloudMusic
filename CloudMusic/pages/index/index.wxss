@@ -1,0 +1,128 @@
+/**index.wxss**/
+@import "/images/iconfont/icon.wxss";
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.swiper{
+  width: 100%;
+  height: 300rpx;
+}
+.swiper image{
+  width: 100%;
+  height: 100%;
+}
+.nav-container{
+  display: flex;
+  flex-direction: row;
+}
+.nav-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.nav-list .iconfont{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background-color:#ff3300;
+  font-size: 50rpx;
+  color: #ffffff;
+  margin:20rpx 0;
+}
+.nav-list text{
+  font-size: 26rpx;
+}
+
+/* .recommend-container{
+  padding: 20rpx;
+} */
+/* 推荐歌单 */
+.recommend-content{
+  display: flex;
+  height: 300rpx;
+}
+.scroll-item{
+  width: 200rpx;
+  margin: 20rpx;
+}
+.scroll-item text{
+  font-size: 24rpx;
+  /* 文本溢出，省略号 */
+  display: -webkit-box;
+  /* 单行 */
+  /* display:block */
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  /* 设置行数 对英文和汉字无效*/
+  -webkit-line-clamp: 2
+}
+.scroll-item image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+/* 排行榜 */
+/* .rankList{
+    margin:20rpx
+} */
+.rank-swiper{
+  height: 400rpx;
+}
+.rank-swiper-items{
+  width: 96%;
+  background-color: #ffffff;
+  margin-left:20rpx;
+  /* border: 1px solid #efefef;
+  border-radius: 10rpx; */
+}
+.rank-swiper-items .rank-title{
+  font-size: 32rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.rank-music{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.rank-music image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 6rpx;
+  background-color: #aaa;
+}
+.rank-music .rank-count{
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.rank-music .rank-MusicName{
+  height: 100rpx;
+  line-height: 100rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

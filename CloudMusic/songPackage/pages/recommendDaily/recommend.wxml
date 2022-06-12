@@ -1,0 +1,29 @@
+<!--pages/recommendDaily/recommend.wxml-->
+<view class="recommendContainer">
+  <view class="header">
+    <image src="/images/recommend/recommendSong.jpg"></image>
+    <view class="date">
+    <text class="day">{{day}} /</text>
+    <text class="month"> {{month}}</text>
+    </view>
+  </view>
+<!-- 推荐列表区域 -->
+  <view class="recommendList">
+    <view class="listHeader">
+    <text>播放全部</text>
+    <text class="select">多选</text>
+    </view>
+<!-- 内容区 -->
+
+    <scroll-view scroll-y class="listScroll" >
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" data-song="{{item}}" data-index="{{index}}" bindtap="toPlayMusic">
+        <image src="{{item.album.picUrl}}"></image>
+        <view class="musicInfo">
+          <text class="musicName">{{item.name}}</text>
+          <text class="singerName">{{item.artists[0].name}}</text>
+          <!-- <text class="iconfont"></text> -->
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
